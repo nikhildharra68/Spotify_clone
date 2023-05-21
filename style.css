@@ -1,0 +1,197 @@
+
+body{
+    width: 100vw;
+    height: 100vh;
+
+    display: grid;
+
+    grid-template-areas: 
+    
+       "aside header"
+       "aside main"
+       "aside footer"
+    ;
+    grid-template-columns: 20vw 1fr;
+    grid-template-rows: 70px 1fr 30vh ;
+    color: white;
+    position: absolute;
+
+}
+
+.head{
+    width: 80vw;
+    height: 70px;
+    background-color: #1A120B;
+    position: fixed;
+    
+}
+.log-sign{
+    position: absolute; 
+    right: 20px;
+    display: flex;
+    flex-direction:row ;
+    align-items: center;
+    gap: 40px;
+}
+h4{
+    color: white;
+    font-size: 20px;
+}
+p{
+    color: darkgray;
+    font-size: 14px;
+}
+.section{
+    margin-top: 20px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.player{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.card{
+    width: 180px;
+    height: 500px;
+    border-radius: 10px;
+    background-color:#09090c;
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+    gap: 20px;
+    padding: 10px;
+
+}
+.card:hover{
+    scale: 1.01;
+    opacity: 0.9;
+    background-color: aliceblue;
+    border: white;
+}
+#stars{
+   border-radius: 50%;
+   width: 140px;
+   height: 120px;
+}
+#top{
+    width: 140px;
+    height: 120px;
+}
+button{
+  
+    background-color: white;
+    color: #13131a;
+    padding: 15px;
+   
+   
+}
+
+.log{
+    border-radius: 25px;
+    font-size: 20px;
+}
+.log:hover{
+    background-color: aquamarine;
+    scale: 1.03;
+}
+.nav{
+   
+    margin-top: 20px;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    align-content: center;
+    justify-items:center ;
+    gap: 40px;
+
+}
+.nav_info{
+    
+    display: flex;
+    flex-direction: column;
+   
+    gap:20px;
+    align-items: center;
+
+}
+.info{
+       display: flex;
+       flex-direction: column;
+       margin-left:20px ;
+       align-content: center;
+       justify-content: center;
+       gap: 50px;
+       
+}
+.help_info{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    color: darkgray;
+    font-size: 12px;
+}
+.link{
+    text-decoration: none;
+    color: white;
+}
+.link1{
+    text-decoration: none;
+    color: darkgray;
+}
+.link1:hover{
+    color: white;
+}
+.link:hover{
+    color: lightgreen;
+    scale:1.1;
+}
+.links{
+    display: grid;
+    grid-template-columns: 20vw 20vw 20vw ;
+    gap: 30x;
+    margin-top: 20px;
+    margin-left: 20px;
+
+}
+.company{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+header{
+    grid-area: header;
+    /* background-color: #1A120B; */
+    position: absolute;
+    
+}
+aside{
+   grid-area: aside;
+   width: 20vw;
+   height: 100vh;
+   background-color: black;
+   display: grid;
+   grid-template-rows: 4fr 2fr;
+   
+   /* position: relative; */
+}
+main{
+    grid-area: main;
+    background-color: #13131a;
+    display: grid;
+    grid-template-rows:1fr 1fr 1fr ;
+    position:relative;
+}
+footer{
+    width: 80vw;
+    height: 40vh;
+    grid-area: footer;
+    position: absolute;
+    
+    z-index: 10;
+    background-color: #13131a;
+    display: flex;
+    flex-direction: column;
+}
